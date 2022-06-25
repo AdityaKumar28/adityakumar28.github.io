@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Aditya Kumar</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script crossorigin="anonymous"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+<div id="loading">
+    <div id="spinner"></div>
+</div>
+<div id="particles-js"></div>
+<div id="box">
+    <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+    <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+    <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+    <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+    <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+    <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+</div>
+<a class="animated fadeIn" id="about" onclick="showabout()" style="animation-delay:2.2s;">about</a>
+<a class="animated fadeIn" id="work" onclick="showwork()" style="animation-delay:2.2s;">work</a>
+<!--<a class="animated fadeIn" id="contact" onclick="showcontact()" style="animation-delay:2.2s;">contact</a>-->
+<div class="animated slideInDown" id="middle" style="animation-delay:2.0s;">
+    <h1>Aditya Kumar.</h1>
+    <h2>Software Developer / Dreamer / Human</h2>
+    <div id="menu">
+        <a onclick="showabout()">about</a>
+        <a onclick="showwork()">work</a>
+        <a onclick="showcontact()">contact</a>
+    </div>
+    <table>
+        <tr>
+            <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-linkedin"></i></a>
+            </td>
+            <td class="animated zoomIn" style="animation-delay:2.5s;"><a class="social"><i
+                    class="fab fa-github"></i></a></td>
+            <td class="animated zoomIn" style="animation-delay:2.7s;"><a class="social"><i class="fab fa-facebook"></i></a>
+            </td>
+            <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social"><i class="fab fa-instagram"></i></a>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="container" id="work_container">
+    <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+    <h1>Work Experience.</h1>
+    <ol>
+        <li>
+            <section>
+                <h2>SDE-1 | RaRa Delivery | Feb 22 – Present</h2>
+                <ul>
+
+                </ul>
+            </section>
+        </li>
+        <li>
+            <section>
+                <h2>SDE-1 | Recro | Sep 21 – Feb 22</h2>
+                <ol type="i">
+                    <li>
+                        <h3>Client – Rivigo Services Pvt. Ltd.</h3>
+                        <ul>
+                            <li>
+                                Reduced manual workflows by around 75 percent by developing a backend infrastructure
+                                which handled all demand from end user and later was mapped with relevant supplier as
+                                per relay model proposed by business.
+                            </li>
+                            <li>
+                                Strong programming skills in designing and implementation of multi tier applications
+                                using web-based technologies like Spring MVC and Spring Boot.
+                            </li>
+                            <li>
+                                Excellent knowledge on Spring Core such as Dependency Injection, Annotations and XML
+                                based Configurations.
+                            </li>
+                            <li>
+                                Extensively worked on Spring boot for creating and managing endpoints that drive the
+                                whole Micro-service-based architecture.
+                            </li>
+                            <li>
+                                Worked on Spring JDBC, Spring Hibernate ORM and JPA to persist entities and manage
+                                transactions.
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+        </li>
+        <li>
+            <section>
+                <h2>System Engineer | Tata Consultancy Services | Aug 19 – Sep 21</h2>
+                <ol type="i">
+                    <li>
+                        <h3>Client – Priceline.com </h3>
+                        <ul>
+                            <li>
+                                Developed REST APIs in spring boot in an agile environment.
+                            </li>
+                            <li>
+                                Built utility for handling multiple input file formats from
+                                different vendors and converted them to the required
+                                format.
+                            </li>
+                            <li>
+                                Involved in implementation, debugging, dev testing of application and received
+                                appreciation
+                                from client for production server support on high priority issues.
+                            </li>
+                            <li>
+                                Developed Microservices for interacting with Apache
+                                Kafka.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Client – State Bank of India</h3>
+                        <ul>
+                            <li>
+                                Developed backend modules in Spring Framework that can easily be scaled depending on
+                                client's requirement.
+                            </li>
+                            <li>
+                                Fixed bug or runtime exceptions in the production
+                                environment.
+                            </li>
+                            <li>
+                                Providing assistance in tasks like production
+                                deployment via Oracle's Weblogic Administration 12c and
+                                database administration to respective teams.
+                            </li>
+                        </ul>
+                    </li>
+
+                </ol>
+            </section>
+        </li>
+    </ol>
+</div>
+<div class="container" id="about_container">
+    <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+    <h1>about.</h1>
+    <section style="line-height:1.25;width: 500px">
+        <p>
+            I'm a Back-End Developer located in India. I have a serious
+            passion for building backend infrastructures, reading about design patterns and creating intuitive, dynamic
+            and scalable
+            user experiences.
+        </p>
+        <p>
+            Well-organised person, problem solver, independent employee with
+            great attention to detail.
+            Fan of Cricket, outdoor activities, TV series
+            and English literature.
+            Interested in the entire backend spectrum and working on ambitious
+            projects with positive people.
+        </p>
+    </section>
+    <section>
+        <h1>skills</h1>
+        <p>
+        <table>
+            <tr>
+                <td>Languages</td>
+                <td>:</td>
+                <td>Java, GoLang, Javascript</td>
+            </tr>
+            <tr>
+                <td>Frameworks</td>
+                <td>:</td>
+                <td>Spring, Spring Boot</td>
+            </tr>
+            <tr>
+                <td>Databases</td>
+                <td>:</td>
+                <td>MySql, PostgreSQL, MongoDB</td>
+            </tr>
+            <tr>
+                <td>Operating System</td>
+                <td>:</td>
+                <td>Mac OS, Linux, Windows</td>
+            </tr>
+            <tr>
+                <td>Messaging Queues</td>
+                <td>:</td>
+                <td>Apache Kafka, GCP Pub/Sub, AWS SQS, RabbitMQ</td>
+            </tr>
+            <tr>
+                <td>Other</td>
+                <td>:</td>
+                <td>Docker, Git, Github, </td>
+            </tr>
+        </table>
+        </p>
+    </section>
+</div>
+<div class="container" id="contact_container">
+    <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+    <h1>contact.</h1>
+    <section>
+        <h2>contact me</h2>
+        <p>
+        <form onsubmit="closecontact()">
+            <input placeholder="name" required type="text">
+            <input placeholder="email" required type="email"><br>
+            <textarea placeholder="your message" required rows="5"></textarea><br>
+            <button class="btn_one">send</button>
+        </form>
+        </p>
+    </section>
+</div>
+<script src="index.js" type="text/javascript"></script>
+<script src="particles.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
